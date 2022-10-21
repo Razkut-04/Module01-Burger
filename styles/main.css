@@ -142,7 +142,7 @@ header {
   margin: 0 auto;
 }
 .banner-box {
-  background-image: url(/images/banner.jpg);
+  background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
