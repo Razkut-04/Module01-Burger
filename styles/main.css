@@ -15,8 +15,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 25px;
+  /* padding-top: 26px; */
+  /* padding-bottom: 25px; */
+  padding-bottom: 20px
 } 
 .header-item {
   display: flex;
@@ -632,8 +633,11 @@ body {
   }
 }
 @media (max-width: 567px) {
+  .header {
+    padding: 18px 0;
+}
   .breadcrumbs a {
-    font-size: 15px;
+    font-size: 14px;
   }
   .title {
     font-size: 38px;
@@ -643,11 +647,86 @@ body {
   }
   .bg {
     font-size: 55px 0;
+    padding: 48px;
+    margin-bottom: 33px;
   }
   .banner-box {
     background-position: 17% center;
     padding: 35px 24px 54px;
+    margin-bottom: 31px;
   }
+  .menu-header {
+    margin-bottom: 4px;
+    margin-bottom: -12px;
+}
+  .menu-title {
+    font-size: 27px;
+    line-height: 56px;
+    /* margin-bottom: 31px; */
+  }
+  .menu-select {
+    font-size: 12px;
+    flex-basis: 46%;
+    padding: 10px 20px;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 0;
+    margin-bottom: 30px;
+  }
+  .menu-grid-cover {
+    width: 92%;
+    height: 180px;
+    margin-bottom: 7px;
+  }
+  .menu-grid-title {
+    font-size: 13px;
+    line-height: 20px;
+    /* margin-top: 7px; */
+  }
+  .menu-grid-price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #979797;
+    margin-top: 4px;
+    margin-bottom: 7px;
+  }
+  .menu-grid-btn {
+    width: 129px;
+    height: 38px;
+    gap: 10px;
+    margin-right: 14px;
+  }
+  .menu-grid-icon {
+    padding-right: 20px;
+  }
+  .menu-other .menu-grid-cover,
+  .menu-other .menu-grid-cover img {
+    height: 179px;
+  }
+  .menu-other .menu-grid-item {
+    flex: 0 0 145px;
+    padding-bottom: 70px;
+  }
+  .footer {
+    margin-top: -137px;
+  }
+  .footer-box {
+    /* display: flex; */
+    flex-direction: column;
+  }
+  .logo-tel-adapt {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+  }
+  /* .item {
+    justify-content:space-between
+  }
+  .footer-tel {
+    justify-content:space-between;
+  } */
 }
 @media (max-width: 360px) {
   .header-logo {
