@@ -15,9 +15,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding-top: 26px; */
-  /* padding-bottom: 25px; */
-  padding-bottom: 20px
+  padding-top: 26px;
+  padding-bottom: 25px;
 } 
 .header-item {
   display: flex;
@@ -269,13 +268,10 @@ header {
   padding: 8px 30px;
   border: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   gap: 9px;
   width: 152px;
   height: 38px;
-  border: 1px solid  #F37335;
 }
 .menu-grid-btn:hover {
   background:#F37335;
@@ -564,10 +560,16 @@ body {
   .footer-list + .footer-list-tel {
     display: none;
   }
+  .logo-tel-adapt {
+    display: none;
+  }
 }
 
 @media (min-width: 766px) {
   .header-burger {
+    display: none;
+  }
+  .logo-tel-adapt {
     display: none;
   }
 }
@@ -616,11 +618,21 @@ body {
   .menu-other .menu-grid-cover img {
     height: 320px;
   }
-  .footer-tel {
-    display: none;
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 100%;
   }
-  .footer-list + .footer-list-tel {
-    display: block;
+  .item {
+    width: 15%;
+    height: 100%;
+  }
+  .footer-item {
+    width: 40%;
+  }
+  .footer-tel {
+    margin-left: 18%;
   }
 }
 @media (max-width: 765px) {
@@ -630,8 +642,14 @@ body {
   .header {
     gap: 21px;
   }
+  .logo-tel-adapt {
+    display: none;
+  }
 }
 @media (max-width: 567px) {
+  .footer-logo {
+    display: none;
+  }
   .header {
     padding: 18px 0;
 }
@@ -661,7 +679,6 @@ body {
   .menu-title {
     font-size: 27px;
     line-height: 56px;
-    /* margin-bottom: 31px; */
   }
   .menu-select {
     font-size: 12px;
@@ -674,14 +691,13 @@ body {
     margin-bottom: 30px;
   }
   .menu-grid-cover {
-    width: 92%;
+    width: 94%;
     height: 180px;
     margin-bottom: 7px;
   }
   .menu-grid-title {
     font-size: 13px;
     line-height: 20px;
-    /* margin-top: 7px; */
   }
   .menu-grid-price {
     font-weight: 700;
@@ -694,8 +710,7 @@ body {
   .menu-grid-btn {
     width: 129px;
     height: 38px;
-    gap: 10px;
-    margin-right: 14px;
+    gap: 5px;
   }
   .menu-grid-icon {
     padding-right: 20px;
@@ -712,20 +727,24 @@ body {
     margin-top: -137px;
   }
   .footer-box {
-    /* display: flex; */
     flex-direction: column;
   }
   .logo-tel-adapt {
     display: flex;
-    justify-content: space-between;
-    flex-basis: 100%;
   }
-  /* .item {
-    justify-content:space-between
-  }
+}
+@media (max-width: 566px) {
   .footer-tel {
-    justify-content:space-between;
-  } */
+    display: none;
+  }
+  .footer-logo{
+    display: none;
+  }
+  .logo-tel-adapt {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 360px) {
   .header-logo {
